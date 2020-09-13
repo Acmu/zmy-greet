@@ -1,0 +1,44 @@
+{
+  "name": "zmy-greet",
+  "version": "1.0.0",
+  "description": "A simple ts package",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "format": "prettier --write '**/*.{js,jsx,ts,tsx}'",
+    "lint": "eslint . --ext '.js,.jsx,.ts,.tsx'",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Acmu/zmy-greet.git"
+  },
+  "keywords": [
+    "ts",
+    "npm"
+  ],
+  "author": "MinYuan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Acmu/zmy-greet/issues"
+  },
+  "homepage": "https://github.com/Acmu/zmy-greet#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.13",
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.4.2",
+    "prettier": "^2.1.1",
+    "ts-jest": "^26.3.0",
+    "typescript": "^4.0.2"
+  }
+}

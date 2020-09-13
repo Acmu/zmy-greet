@@ -1,6 +1,6 @@
 {
   "name": "zmy-greet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple ts package",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

@@ -1,1 +1,0 @@
-npm install --save-dev jest @types/jest ts-jest
